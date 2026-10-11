@@ -1,0 +1,52 @@
+{
+  "name": "dsh-game-studio",
+  "version": "0.1.18",
+  "private": true,
+  "description": "沙盒游戏工坊：在工作区内加载静态 Web 小游戏，localhost 实时预览，边聊边改",
+  "type": "module",
+  "license": "MIT",
+  "author": "DSH Desktop user (local build)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/local-user/dsh-game-studio.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "dsh-workbench",
+    "game",
+    "sandbox"
+  ],
+  "main": "dsh/index.js",
+  "exports": {
+    ".": {
+      "default": "./dsh/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=0.1.5-rc.1 <0.3.0-0"
+  },
+  "files": [
+    "dsh",
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ]
+}

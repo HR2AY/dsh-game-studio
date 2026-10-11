@@ -1,0 +1,7 @@
+# 沙盒游戏工坊：把服务端入口插入 Harness 插件树。
+# 只插入本工作台自己的条目，不覆盖 Desktop 或其他插件的行。
+- insert:
+    - id: game-studio
+      name: dsh-game-studio
+      config:
+        root: !!js dshHomePath('game-studio')

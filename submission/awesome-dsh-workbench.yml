@@ -1,0 +1,13 @@
+# 收录条目草稿 —— 目标路径：data/workbenches/HR2AY__dsh-game-studio.yml
+# 待办：把 url 与 screenshots 换成真实的公开仓库与实拍截图地址后再提交 PR。
+url: https://github.com/HR2AY/dsh-game-studio
+name: 沙盒游戏工坊
+nameEn: Game Studio
+category: development
+description:
+  zh: 在工作区里读取静态网页小游戏，用本机 localhost 实时预览，并让 AI 边看画面边改代码。
+  en: Load static web mini-games from your workspace, preview them live on localhost, and let the AI edit the code while you watch.
+screenshots:
+  - https://raw.githubusercontent.com/HR2AY/dsh-game-studio/main/docs/images/overview.png
+  - https://raw.githubusercontent.com/HR2AY/dsh-game-studio/main/docs/images/preview.png
+  - https://raw.githubusercontent.com/HR2AY/dsh-game-studio/main/docs/images/paint.png
